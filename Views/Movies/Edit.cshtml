@@ -40,8 +40,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="DirectorID" class="control-label"></label>
-                <select class="form-control" asp-for="DirectorID" asp-items="@ViewBag.Directors">
+                <select class="form-control" asp-for="DirectorID" asp-items="@ViewBag.Directors" id="dropdown">
                 </select>
+                <input type="text" name="textbox" id="textbox" class="form-control inactive" placeholder="New Director"/>
+                <input type="checkbox" name="checkbox" id="checkbox" onclick="toggleCheck()"/>
+                <label for="checkbox">Add a New Director</label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

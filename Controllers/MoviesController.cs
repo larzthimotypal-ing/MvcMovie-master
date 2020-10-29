@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
@@ -139,8 +140,19 @@ namespace MvcMovie.Controllers
             {
                 try
                 {
+                    var newDirectorName = Request.Form["textbox"];
+                    //add director
+                    if (!string.IsNullOrWhiteSpace(newDirectorName))
+                    {
+                        Director director = new Director(newDirectorName);
+                        _context.Update(director);
+                        await _context.SaveChangesAsync();
+                        movie.DirectorID = director.ID;
+
+                    }                    
                     _context.Update(movie);
                     await _context.SaveChangesAsync();
+                    
                 }
                 catch (DbUpdateConcurrencyException)
                 {
