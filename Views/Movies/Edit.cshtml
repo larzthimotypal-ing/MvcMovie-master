@@ -41,6 +41,7 @@
             <div class="form-group">
                 <label asp-for="DirectorID" class="control-label"></label>
                 <select class="form-control" asp-for="DirectorID" asp-items="@ViewBag.Directors" id="dropdown">
+                    <option value="" selected>Choose here</option>
                 </select>
                 <input type="text" name="textbox" id="textbox" class="form-control inactive" placeholder="New Director"/>
                 <input type="checkbox" name="checkbox" id="checkbox" onclick="toggleCheck()"/>

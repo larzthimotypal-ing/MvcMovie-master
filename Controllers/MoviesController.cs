@@ -149,7 +149,7 @@ namespace MvcMovie.Controllers
                         await _context.SaveChangesAsync();
                         movie.DirectorID = director.ID;
 
-                    }                    
+                    }
                     _context.Update(movie);
                     await _context.SaveChangesAsync();
                     
