@@ -70,7 +70,15 @@ namespace MvcMovie.Controllers
                 return NotFound();
             }
 
+            var director = await _context.Directors.Where(i => i.ID == movie.DirectorID).ToListAsync();
+            var directorName = "";
+            foreach( var i in director)
+            {
+                directorName = i.Name;
+            }
+            ViewBag.directorName = directorName;
             return View(movie);
+
         }
 
         #region Create
@@ -222,5 +230,6 @@ namespace MvcMovie.Controllers
                 "Text");
             return selectList;
         }
+
     }
 }

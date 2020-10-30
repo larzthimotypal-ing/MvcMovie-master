@@ -1,0 +1,90 @@
+﻿.page-title {
+    margin: 3rem 0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    font-size: 2.8rem;
+}
+
+.custom-button-yellow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-button-yellow a:hover{
+    background: #d0ba63;
+}
+
+.custom-button-yellow a{
+    background: #ffeeaa;
+    padding: 12px;
+    font-weight: 600;
+    color: black;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.table-area-content {
+    border: solid 2px rgb(131, 126, 126);
+    width: 98%;
+    margin: auto;
+}
+
+.table-area {
+    width: 100%;
+    background: rgb(99, 95, 95);
+    padding: 1.6rem 1rem;
+    margin: 2rem 0 8rem;
+}
+
+th, td {
+    padding: 1rem;
+    border-right: solid black 1px;
+    border-bottom: solid black 1px;
+    color: black;
+    text-align: center;
+}
+
+
+th, tr:nth-child(even) {
+    background: #c5edd7;
+}
+
+tr:nth-child(odd) {
+    background: #ecf9f2;
+}
+
+td a {
+    margin: 4px;
+    color: black;
+    padding: 4px 8px;
+}
+
+    td a:hover:nth-child(1) {
+        background: #558000;
+        color: white;
+        border-radius: 2px;
+    }
+
+    td a:hover:nth-child(2) {
+        background: #e6ac00;
+        color: white;
+        border-radius: 2px;
+    }
+
+    td a:hover:nth-child(3) {
+        background: #b30000;
+        color: white;
+        border-radius: 2px;
+    }
+
+.filter input,
+.filter select{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.director-details-delete a:hover:nth-child(1){
+    background: #b30000;
+}

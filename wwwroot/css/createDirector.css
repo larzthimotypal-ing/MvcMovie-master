@@ -1,0 +1,61 @@
+﻿.button-submit {
+    background: #ffeeaa;
+    color: black;
+    padding: 8px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+}
+
+.button-submit:hover {
+    background: #d5c06c;
+}
+
+.fillup-group{
+    margin-top: 2rem;
+}
+
+.fillup-group label{
+    margin-bottom: .8rem;
+}
+
+.fillup-group input,
+.fillup-group select{
+    margin: .6rem 0;
+}
+
+.back-to-list{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.back-to-list:hover {
+    color: #4d958aff;
+}
+
+.subheading {
+    color: rgb(228, 228, 228);
+}
+
+.delete-link{
+    background: none;
+    border: none;
+    color: white;
+}
+
+.delete-link:hover {
+    color: #4d958aff;
+}
+
+    .delete-link:focus {
+        outline: none;
+        color: #4d958aff;
+    }
+
+.not-a-table {
+    background: #ecf9f2;
+    color: black;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+

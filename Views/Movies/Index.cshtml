@@ -4,43 +4,45 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="custom-container">
+    <h1 class="page-title">Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <div class="custom-button-yellow">
+        <a asp-action="Create">+Add New Movie</a>
+    </div>
+    <form asp-controller="Movies" asp-action="Index" method="get">
+        <div class="filter">
+            <select asp-for="MovieGenre" asp-items="Model.Genres">
+                <option value="">All</option>
+            </select>
 
-<form asp-controller="Movies" asp-action="Index" method="get">
-    <p>
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
-            <option value="">All</option>
-        </select>
-
-        Title: <input type="text" name="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
-</form>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].ReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Genre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Price)
-            </th>
-            <th>@Html.DisplayNameFor(m => m.Movies[0].Rating)</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Movies) {
+            Title: <input type="text" name="SearchString" />
+            <input type="submit" value="Filter" class="button-submit" />
+        </div>
+    </form>
+    <div class="table-area">
+        <table class="table-area-content">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].ReleaseDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Genre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Price)
+                    </th>
+                    <th>@Html.DisplayNameFor(m => m.Movies[0].Rating)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Movies)
+                {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
@@ -59,13 +61,16 @@
             </td>
             <td>
                 <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                    <a class="btn btn-small btn-success" asp-action="Edit" asp-route-id="@item.ID">Edit</a> 
-                    <a class="btn btn-small btn-secondary" asp-action="Details" asp-route-id="@item.ID">Details</a> 
-                    <a class="btn btn-small btn-danger" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
                 </div>
-              
+
             </td>
         </tr>
 }
-    </tbody>
-</table>
+            </tbody>
+        </table>
+    </div>
+</div>
+

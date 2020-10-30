@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -9,13 +10,14 @@ namespace MvcMovie.Models
 {
     public class Movie
     {
+  
         public int ID { get; set; }
 
         [StringLength(60, MinimumLength = 3)]
         [Required]
         public string Title { get; set; }
 
-        [Display(Name ="Release Date")]
+        [DisplayName ("Release Date")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
@@ -37,5 +39,6 @@ namespace MvcMovie.Models
         public int? DirectorID { get; set; }
         public Director Director { get; set; }
        
+        
     }
 }

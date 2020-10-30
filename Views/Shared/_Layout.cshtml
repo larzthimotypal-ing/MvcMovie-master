@@ -7,38 +7,239 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/css/addDirector.css" rel="stylesheet" />
+    <link href="~/css/table.css" rel="stylesheet" />
+    <link href="~/css/utility.css" rel="stylesheet" />
+    <link href="~/css/hero-section.css" rel="stylesheet" />
+    <link href="~/css/createDirector.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  box-shadow mb-3 custom-nav">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Movie App</a>
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">Movie App</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <li class="nav-item nav-space">
+                            <a class="nav-link text-white nav-wrap" asp-area="" asp-controller="Home" asp-action="Index">
+                                <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                     xmlns:cc="http://creativecommons.org/ns#"
+                                     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                     xmlns:svg="http://www.w3.org/2000/svg"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                     width="20"
+                                     height="20"
+                                     viewBox="0 0 26.458333 26.458333"
+                                     version="1.1"
+                                     id="svg8"
+                                     inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+                                     sodipodi:docname="Movies Home Icon.svg"
+                                     inkscape:export-filename="C:\Users\Michelle\bitmaaap.png"
+                                     inkscape:export-xdpi="96"
+                                     inkscape:export-ydpi="96">
+                                    <defs id="defs2">
+                                        <inkscape:perspective sodipodi:type="inkscape:persp3d"
+                                                              inkscape:vp_x="0 : 13.229166 : 1"
+                                                              inkscape:vp_y="0 : 1000 : 0"
+                                                              inkscape:vp_z="26.458333 : 13.229166 : 1"
+                                                              inkscape:persp3d-origin="13.229166 : 8.8194443 : 1"
+                                                              id="perspective55" />
+                                    </defs>
+                                    <sodipodi:namedview id="base"
+                                                        pagecolor="#ffffff"
+                                                        bordercolor="#666666"
+                                                        borderopacity="1.0"
+                                                        inkscape:pageopacity="0.0"
+                                                        inkscape:pageshadow="2"
+                                                        inkscape:zoom="5.55"
+                                                        inkscape:cx="50"
+                                                        inkscape:cy="50"
+                                                        inkscape:document-units="mm"
+                                                        inkscape:current-layer="layer1"
+                                                        inkscape:document-rotation="0"
+                                                        showgrid="false"
+                                                        units="px"
+                                                        inkscape:window-width="1304"
+                                                        inkscape:window-height="745"
+                                                        inkscape:window-x="-8"
+                                                        inkscape:window-y="-8"
+                                                        inkscape:window-maximized="1" />
+                                    <metadata id="metadata5">
+                                        <rdf:RDF>
+                                            <cc:Work rdf:about="">
+                                                <dc:format>image/svg+xml</dc:format>
+                                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                <dc:title></dc:title>
+                                            </cc:Work>
+                                        </rdf:RDF>
+                                    </metadata>
+                                    <g inkscape:label="Layer 1"
+                                       inkscape:groupmode="layer"
+                                       id="layer1">
+                                        <path id="rect430"
+                                              style="fill:#f9f9f9;stroke-width:1.00157;stroke-opacity:0"
+                                              d="M 48.720703 0.68359375 L 0.25195312 51.111328 L 17.826172 51.111328 L 17.826172 99.509766 C 17.826172 99.693337 17.972656 99.841797 18.15625 99.841797 L 40.03125 99.841797 L 40.03125 71.716797 C 40.03125 71.706436 40.036341 71.697658 40.037109 71.6875 L 40.037109 67.337891 C 40.037109 67.185387 40.175549 67.064453 40.345703 67.064453 L 59.558594 67.064453 C 59.728786 67.064453 59.865234 67.185424 59.865234 67.337891 L 59.865234 71.716797 L 59.865234 94.171875 L 59.865234 99.841797 L 81.746094 99.841797 C 81.929665 99.841797 82.078125 99.693375 82.078125 99.509766 L 82.078125 51.111328 L 99.650391 51.111328 L 48.720703 0.68359375 z M 49.001953 7.5 L 88.3125 46.587891 L 76.449219 46.587891 L 76.449219 50.707031 L 76.433594 50.707031 L 76.433594 60.572266 C 76.433594 60.65493 76.421151 60.733612 76.408203 60.8125 L 76.408203 93.916016 C 76.408203 94.057257 76.293585 94.171875 76.152344 94.171875 L 63.644531 94.171875 L 63.644531 64.017578 C 63.644531 63.829962 63.476964 63.677734 63.267578 63.677734 L 36.634766 63.677734 C 36.42538 63.677734 36.257813 63.829962 36.257812 64.017578 L 36.257812 94.171875 L 23.75 94.171875 C 23.608774 94.171875 23.494141 94.057257 23.494141 93.916016 L 23.494141 60.738281 C 23.487881 60.682881 23.476562 60.629393 23.476562 60.572266 L 23.476562 51.111328 L 23.494141 51.111328 L 23.494141 46.587891 L 11.591797 46.587891 L 49.001953 7.5 z "
+                                              transform="scale(0.26458333)" />
+                                    </g>
+                                </svg>
+                                <span class="link-texts">Home</span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Directors" asp-action="Index">Directors</a>
+                        <li class="nav-item nav-space">
+                            <a class="nav-link text-white nav-wrap" asp-area="" asp-controller="Directors" asp-action="Index">
+                                <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                     xmlns:cc="http://creativecommons.org/ns#"
+                                     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                     xmlns:svg="http://www.w3.org/2000/svg"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                     width="20"
+                                     height="20"
+                                     viewBox="0 0 26.458333 26.458334"
+                                     version="1.1"
+                                     id="svg143"
+                                     inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+                                     sodipodi:docname="Movies Directors Icon.svg"
+                                     inkscape:export-filename="C:\Users\Michelle\bitmaap.png"
+                                     inkscape:export-xdpi="96"
+                                     inkscape:export-ydpi="96">
+                                    <defs id="defs137" />
+                                    <sodipodi:namedview id="base"
+                                                        pagecolor="#ffffff"
+                                                        bordercolor="#666666"
+                                                        borderopacity="1.0"
+                                                        inkscape:pageopacity="0.0"
+                                                        inkscape:pageshadow="2"
+                                                        inkscape:zoom="5.55"
+                                                        inkscape:cx="50"
+                                                        inkscape:cy="50"
+                                                        inkscape:document-units="mm"
+                                                        inkscape:current-layer="layer1"
+                                                        inkscape:document-rotation="0"
+                                                        showgrid="false"
+                                                        units="px"
+                                                        inkscape:window-width="1304"
+                                                        inkscape:window-height="745"
+                                                        inkscape:window-x="-8"
+                                                        inkscape:window-y="-8"
+                                                        inkscape:window-maximized="1" />
+                                    <metadata id="metadata140">
+                                        <rdf:RDF>
+                                            <cc:Work rdf:about="">
+                                                <dc:format>image/svg+xml</dc:format>
+                                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                <dc:title></dc:title>
+                                            </cc:Work>
+                                        </rdf:RDF>
+                                    </metadata>
+                                    <g inkscape:label="Layer 1"
+                                       inkscape:groupmode="layer"
+                                       id="layer1">
+                                        <g id="g301"
+                                           style="stroke-width:0.787946"
+                                           transform="matrix(1.2305306,0,0,1.3089227,-3.243008,-4.296615)">
+                                            <path id="path192"
+                                                  style="fill:#f9f9f9;stroke-width:0.789187;stroke-opacity:0"
+                                                  d="M 33.169922,60.660156 A 20.990991,18.738738 0 0 0 31.351562,68.289062 20.990991,18.738738 0 0 0 52.341797,87.027344 20.990991,18.738738 0 0 0 72.75,72.677734 L 67.322266,71.03125 A 15.322204,13.069606 0 0 1 52.341797,81.357422 15.322204,13.069606 0 0 1 37.019531,68.289062 15.322204,13.069606 0 0 1 38.699219,62.339844 Z"
+                                                  transform="scale(0.26458333)" />
+                                            <path id="rect147"
+                                                  style="fill:#f9f9f9;stroke-width:0.789187;stroke-opacity:0"
+                                                  d="M 85.060547,18.310547 16.037109,39.037109 v 19.689453 l 69.023438,20.552735 z m -0.376953,7.560547 V 71.720703 L 16.414062,56.263672 V 41.457031 Z"
+                                                  transform="scale(0.26458333)" />
+                                            <rect style="fill:#f9f9f9;stroke-width:0.208806;stroke-opacity:0"
+                                                  id="rect171"
+                                                  width="1.5930001"
+                                                  height="18.125"
+                                                  x="22.429523"
+                                                  y="3.9095004"
+                                                  ry="1" />
+                                            <rect style="fill:#f9f9f9;stroke-width:0.208806;stroke-opacity:0"
+                                                  id="rect171-0"
+                                                  width="1.5930001"
+                                                  height="6.125"
+                                                  x="2.8503561"
+                                                  y="9.9095001"
+                                                  ry="1" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="link-texts">Directors</span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Movies" asp-action="Index">Movies</a>
+                        <li class="nav-item nav-space">
+                            <a class="nav-link text-white nav-wrap" asp-area="" asp-controller="Movies" asp-action="Index">
+                                <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                     xmlns:cc="http://creativecommons.org/ns#"
+                                     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                     xmlns:svg="http://www.w3.org/2000/svg"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                     width="20"
+                                     height="20"
+                                     viewBox="0 0 26.458333 26.458334"
+                                     version="1.1"
+                                     id="svg313"
+                                     inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+                                     sodipodi:docname="Movies Icon.svg"
+                                     inkscape:export-filename="C:\Users\Michelle\bitmap.png"
+                                     inkscape:export-xdpi="96"
+                                     inkscape:export-ydpi="96">
+                                    <defs id="defs307" />
+                                    <sodipodi:namedview id="base"
+                                                        pagecolor="#ffffff"
+                                                        bordercolor="#666666"
+                                                        borderopacity="1.0"
+                                                        inkscape:pageopacity="0.0"
+                                                        inkscape:pageshadow="2"
+                                                        inkscape:zoom="5.55"
+                                                        inkscape:cx="44.759084"
+                                                        inkscape:cy="50.014956"
+                                                        inkscape:document-units="mm"
+                                                        inkscape:current-layer="layer1"
+                                                        inkscape:document-rotation="0"
+                                                        showgrid="false"
+                                                        units="px"
+                                                        inkscape:window-width="1304"
+                                                        inkscape:window-height="745"
+                                                        inkscape:window-x="-8"
+                                                        inkscape:window-y="-8"
+                                                        inkscape:window-maximized="1" />
+                                    <metadata id="metadata310">
+                                        <rdf:RDF>
+                                            <cc:Work rdf:about="">
+                                                <dc:format>image/svg+xml</dc:format>
+                                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                                <dc:title></dc:title>
+                                            </cc:Work>
+                                        </rdf:RDF>
+                                    </metadata>
+                                    <g inkscape:label="Layer 1"
+                                       inkscape:groupmode="layer"
+                                       id="layer1">
+                                        <path id="path315"
+                                              style="fill:#f9f9f9;stroke-width:1.00157;stroke-opacity:0"
+                                              d="M 39.90625 8.6230469 A 39.685039 39.685039 0 0 0 0.22070312 48.308594 A 39.685039 39.685039 0 0 0 39.90625 87.994141 A 39.685039 39.685039 0 0 0 60.306641 82.347656 A 39.157531 29.925024 3.0015944 0 0 75.441406 87.533203 A 39.157531 29.925024 3.0015944 0 0 99.832031 85.544922 A 39.157531 29.925024 3.0015944 0 1 97.388672 74.865234 A 39.157531 29.925024 3.0015944 0 1 73.658203 76.625 A 39.157531 29.925024 3.0015944 0 1 68.755859 75.558594 A 39.685039 39.685039 0 0 0 79.589844 48.308594 A 39.685039 39.685039 0 0 0 39.90625 8.6230469 z M 39.90625 12.734375 A 13.228346 13.228346 0 0 1 53.132812 25.962891 A 13.228346 13.228346 0 0 1 39.90625 39.191406 A 13.228346 13.228346 0 0 1 26.677734 25.962891 A 13.228346 13.228346 0 0 1 39.90625 12.734375 z M 17.558594 35.080078 A 13.228346 13.228346 0 0 1 30.787109 48.308594 A 13.228346 13.228346 0 0 1 17.558594 61.537109 A 13.228346 13.228346 0 0 1 4.3300781 48.308594 A 13.228346 13.228346 0 0 1 17.558594 35.080078 z M 62.251953 35.080078 A 13.228346 13.228346 0 0 1 75.480469 48.308594 A 13.228346 13.228346 0 0 1 62.251953 61.537109 A 13.228346 13.228346 0 0 1 49.023438 48.308594 A 13.228346 13.228346 0 0 1 62.251953 35.080078 z M 39.853516 44.529297 A 3.7795276 3.7795276 0 0 1 39.90625 44.529297 A 3.7795276 3.7795276 0 0 1 43.685547 48.308594 A 3.7795276 3.7795276 0 0 1 39.90625 52.087891 A 3.7795276 3.7795276 0 0 1 36.125 48.308594 A 3.7795276 3.7795276 0 0 1 39.853516 44.529297 z M 39.90625 57.427734 A 13.228346 13.228346 0 0 1 43.541016 57.9375 A 13.228346 13.228346 0 0 1 43.822266 58.021484 A 13.228346 13.228346 0 0 1 43.833984 58.025391 A 13.228346 13.228346 0 0 1 44.113281 58.115234 A 13.228346 13.228346 0 0 1 44.125 58.119141 A 13.228346 13.228346 0 0 1 44.402344 58.216797 A 13.228346 13.228346 0 0 1 44.414062 58.220703 A 13.228346 13.228346 0 0 1 44.457031 58.236328 A 13.228346 13.228346 0 0 1 44.921875 58.416016 A 13.228346 13.228346 0 0 1 44.949219 58.427734 A 13.228346 13.228346 0 0 1 52.767578 67.568359 A 13.228346 13.228346 0 0 1 52.785156 67.644531 A 13.228346 13.228346 0 0 1 52.791016 67.667969 A 13.228346 13.228346 0 0 1 52.849609 67.933594 A 13.228346 13.228346 0 0 1 52.851562 67.943359 A 13.228346 13.228346 0 0 1 52.857422 67.972656 A 13.228346 13.228346 0 0 1 52.910156 68.242188 A 13.228346 13.228346 0 0 1 52.962891 68.544922 A 13.228346 13.228346 0 0 1 53.007812 68.845703 A 13.228346 13.228346 0 0 1 53.037109 69.072266 A 13.228346 13.228346 0 0 1 53.039062 69.085938 A 13.228346 13.228346 0 0 1 53.066406 69.345703 A 13.228346 13.228346 0 0 1 53.070312 69.376953 A 13.228346 13.228346 0 0 1 53.078125 69.455078 A 13.228346 13.228346 0 0 1 53.082031 69.517578 A 13.228346 13.228346 0 0 1 53.101562 69.759766 A 13.228346 13.228346 0 0 1 53.115234 69.986328 A 13.228346 13.228346 0 0 1 53.119141 70.064453 A 13.228346 13.228346 0 0 1 53.126953 70.292969 A 13.228346 13.228346 0 0 1 53.128906 70.371094 A 13.228346 13.228346 0 0 1 53.132812 70.597656 A 13.228346 13.228346 0 0 1 53.132812 70.65625 A 13.228346 13.228346 0 0 1 53.005859 72.486328 A 13.228346 13.228346 0 0 1 52.90625 73.089844 A 13.228346 13.228346 0 0 1 52.445312 74.863281 A 13.228346 13.228346 0 0 1 52.238281 75.439453 A 13.228346 13.228346 0 0 1 52.003906 76.003906 A 13.228346 13.228346 0 0 1 51.943359 76.136719 A 13.228346 13.228346 0 0 1 39.90625 83.884766 A 13.228346 13.228346 0 0 1 26.677734 70.65625 A 13.228346 13.228346 0 0 1 39.90625 57.427734 z "
+                                              transform="scale(0.26458333)" />
+                                    </g>
+                                </svg>
+                                <span class="link-texts">Movies</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - Movie App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

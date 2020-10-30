@@ -1,0 +1,60 @@
+﻿body {
+    background: #333333;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.custom-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ffeeaa;
+}
+
+hr {
+    border-top: rgb(197, 197, 197) 1px solid;
+}
+
+.custom-nav {
+    background: #bf7e22;
+    min-height: 5rem;
+}
+
+.link-texts{
+    margin: 1rem; 
+}
+
+.nav-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 2rem;
+}
+
+.nav-space:hover {
+    height: 100%;
+    background: #a56914;
+}
+
+
+
