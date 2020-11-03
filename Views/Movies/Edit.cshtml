@@ -10,7 +10,7 @@
     <hr />
     <div class="row fillup-group">
         <div class="col-md-4">
-            <form asp-action="Edit">
+            <form asp-action="Edit" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="ID" />
                 <div class="form-group">
@@ -46,6 +46,11 @@
                     <input type="text" name="textbox" id="textbox" class="form-control inactive" placeholder="New Director" />
                     <input type="checkbox" name="checkbox" id="checkbox" onclick="toggleCheck()" />
                     <label for="checkbox">Add a New Director</label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PosterFile" class="control-label"></label>
+                    <input asp-for="PosterFile" accept="image" />
+                    <span asp-validation-for="PosterFile" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Save" class="button-submit" />

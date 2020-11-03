@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MvcMovie.Data;
 using System;
@@ -25,6 +26,7 @@ namespace MvcMovie.Models
                         Genre = "Romantic Comedy",
                         Price = 7.99M,
                         Rating = "PG",
+                        PosterName = "WhenHarryMetSallyPoster.jpg",
 
                     },
 
@@ -34,7 +36,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Comedy",
                         Price = 8.99M,
-                        Rating = "GP"
+                        Rating = "GP",
+                        PosterName = "GhostBustersPoster.jpg"
                     },
 
                     new Movie
@@ -43,7 +46,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1986-2-23"),
                         Genre = "Comedy",
                         Price = 9.99M,
-                        Rating = "GP"
+                        Rating = "GP",
+                        PosterName = "GhostBusters2Poster.jpg"
                     },
 
                     new Movie
@@ -52,15 +56,17 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1959-4-15"),
                         Genre = "Western",
                         Price = 3.99M,
-                        Rating = "R"
+                        Rating = "R",
+                        PosterName = "RioBravoPoster.jpg"
                     },
                     new Movie
                     {
-                        Title = "Inglorious Basterds",
+                        Title = "Inglourious Basterds",
                         ReleaseDate = DateTime.Parse("2009-08-21"),
                         Genre = "War",
                         Price = 5.00M,
                         Rating = "R",
+                        PosterName = "InglouriousBasterdsPoster.jpg"
                     },
                     new Movie
                     {
@@ -68,7 +74,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2013-01-18"),
                         Genre = "Horror",
                         Price = 4.99M,
-                        Rating = "PG"
+                        Rating = "PG",
+                        PosterName = "MamaPoster.jpg"
                     },
                     new Movie
                     {
@@ -76,7 +83,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1996-11-01"),
                         Genre = "Romance",
                         Price = 6.29M,
-                        Rating = "PG"
+                        Rating = "PG",
+                        PosterName = "RomeoAndJulietPoster.jpg"
                     },
                     new Movie
                     {
@@ -84,7 +92,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2017-10-27"),
                         Genre = "Mystery",
                         Price = 9.50M,
-                        Rating = "R"
+                        Rating = "R",
+                        PosterName = "JigsawPoster.jpg"
                     }
                     );
                 }
